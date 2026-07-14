@@ -1,7 +1,7 @@
 function generarTablas() 
 {
     let contenido="";
-    let tabla=3;
+    let tabla=5;
     let cmpContenedor=document.getElementById("contenedor");
     let cmpTitulo=document.getElementById("txtTitiulo");
     cmpTitulo.innerText="🌈 Aprende la Tabla del "+tabla+" 🌈";
@@ -9,7 +9,7 @@ function generarTablas()
     for (let index = 1; index <=12; index++) 
         {
             let resultado=tabla*index;
-            contenido=contenido+"<div class='fila' id='items'><span>3 × "+index
+            contenido=contenido+"<div class='fila' id='items'><span>"+tabla+" × "+index
         +"</span><span>=</span><strong>"+resultado+"</strong></div>";
         cmpContenedor.innerHTML=contenido;
         
